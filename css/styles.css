@@ -83,7 +83,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="telephone"],
+input[type="tel"],
 select,
 textarea {
   width: 100%;
@@ -270,7 +270,7 @@ button[type="submit"] {
 
   input[type="text"],
   input[type="email"],
-  input[type="telephone"],
+  input[type="tel"],
   select {
     display: inline-block;
     width: 74%;
