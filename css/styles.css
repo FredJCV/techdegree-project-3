@@ -1,0 +1,301 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: #2D3945;
+}
+
+div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #2D3945;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+}
+
+h1,
+h2,
+legend,
+button[type="submit"] {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h2 {
+  padding-top: .7em;
+}
+
+p {
+  opacity: .4;
+  padding-bottom: 1.5em;
+}
+
+p,
+label,
+input {
+  font-size: 14px;
+}
+
+div hr {
+  padding: 2px;
+  border-top: 4px solid;
+  border-right: none;
+  border-bottom: 2px solid;
+  border-left: none;
+}
+  
+.contact,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  padding-top: 1em;
+  padding-bottom: .4em;
+}
+
+label {
+  padding-top: 1.3em;
+  padding-bottom: .7em;
+  opacity: .7;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="telephone"],
+select,
+textarea {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #eff0f1;
+  background-color: #eff0f1;
+  padding: 15px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #46698B;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(188, 227, 228, 0.445);
+  transition: .5s;
+}
+
+input[placeholder]::placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+input[placeholder]::placeholder,
+select:required:invalid,
+textarea[placeholder]::placeholder {
+  color: rgba(45, 57, 69, 0.397);
+}
+
+option:not(:first-of-type) {
+  color: black;
+}
+
+input[placeholder]::placeholder,
+select:required:invalid,
+option {
+  font-size: 13px;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+#zipcode {
+  width: 50%;
+}
+
+form hr {
+  margin-top: 30px;
+  border-top: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin-bottom: -57px;
+}
+
+.newsletter {
+  background-color: rgba(188, 227, 228, 0.445);
+  border-radius: 0 0 5px 5px;
+}
+
+.newsletter legend {
+  padding-top: 80px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.select_news {
+  height: 5.5em;
+}
+
+.select_format {
+  height: 3.5em;
+}
+
+label[for$="news"],
+label[for$="format"],
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li label[for] {
+  padding-left: .5em;
+}
+
+.newsletter label {
+  line-height: 1.7;
+}
+
+label[for="comment"] {
+  padding-top: 1.4em;
+  padding-bottom: 1em;
+}
+
+textarea {
+  height: 6em;
+  resize: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
+  margin-top: 1.5em;
+  margin-bottom: .7em;
+  color: white;
+  background-color: #4EBBB5;
+  border: none;
+  border-radius: 5px;
+}
+
+.copyright {
+  padding-bottom: 190px;
+}
+  
+@media (min-width: 768px) {
+  div {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+  }
+
+  h2 {
+    padding-top: 2.5em;
+  }
+
+  p,
+  label,
+  input {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  input[placeholder]::placeholder,
+  select:required:invalid,
+  option {
+    font-size: 11px;
+  }
+
+  legend {
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+  }
+
+  input,
+  select {
+    padding: 13px;
+    margin-bottom: 1em;
+  }
+
+  #zipcode {
+    width: 25%;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .contact label {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="telephone"],
+  select {
+    display: inline-block;
+    width: 74%;
+  }
+
+  form hr {
+    margin-bottom: -64px;
+  }
+  
+  .newsletter legend {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .select-dir {
+    padding-top: 2em;
+  }
+
+  textarea {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .copyright {
+    padding-bottom: 260px;
+  }
+}
+  
