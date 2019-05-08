@@ -211,6 +211,10 @@ button[type="submit"] {
   border-radius: 5px;
 }
 
+button[type="submit"] {
+  cursor: pointer;
+}
+
 .copyright {
   padding-bottom: 190px;
 }
